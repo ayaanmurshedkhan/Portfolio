@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header and Navigation Bar-->
+
+  <header id="home">
+    <div class="logo">
+      <a class="logo-name" href="">ayaan</a>
+    </div>
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#recommendation">Recommendations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section-->
+
+  <main>
+    <section id="about">
+      <div class="imageSection">
+        <img src="./public/myImage.jpg" alt="">
+      </div>
+      <div class="textSection">
+        <h1>Hi, I'm <span style="color: #7700BC;">Ayaan Murshed Khan</span>! &#128075 </h1>
+        <p>I am a bachelor of technology student in computer science and enginnering. Now I learn full stack software development with IBM and try to crack internship and job opportunity.</p>
+      </div>
+    </section>
+
+
+    <section id="skill">
+      <h1>My skill's</h1>
+      <div class="skillSection">
+        <div class="skill-box">
+          <img src="./public/html.png" alt="html">
+          <p class="img-name">HTML</p>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill-box">
+          <img src="./public/css.png" alt="css">
+          <p class="img-name">CSS</p>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill-box">
+          <img src="./public/js.png" alt="javaScript">
+          <p class="img-name">javaScript</p>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill-box">
+          <img src="./public/react.png" alt="react">
+          <p class="img-name">React</p>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill-box">
+          <img src="./public/nodejs.png" alt="nodejs">
+          <p class="img-name">Node Js</p>
+          <p>1 year experience</p>
+        </div>
+        <div class="skill-box">
+          <img src="./public/java.png" alt="java">
+          <p class="img-name">Java</p>
+          <p>1 year experience</p>
+        </div>
+      </div>
+     </section>
+
+
+     <section id="project">
+      <h1>My Projects</h1>
+      <div class="project-box">
+        <h5>Chatbot</h5>
+        <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+        <br>
+        <h5>E-Commerce Website</h5>
+        <li>Created a styled multi-page website for e-commerce idustry and integrated it with a shopping cart, using stripe for payment gateway</li>
+        <br>
+        <h5>Sentiment Analyzer</h5>
+        <li>Developed and deployed a sentiment analyzer for the box review section of an ecommerce platform using IBM NLU</li>
+      </div>
+     </section>
+
+     <section id="recommendation">
+      <h1>Leave a Recommendations</h1>
+
+      <div class="comment-box">
+        <input type="text" placeholder="Name (Optional)">
+        <textarea id="recommendation-text" rows="10" placeholder="add your recommendation here"></textarea>
+        <button onclick="submitRecommendation()">Submit</button>
+      </div>
+
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <i class="fa-regular fa-circle-check"></i>
+          <p>Thank you for submitting a recommendation!</p>
+          <button id="closebtn" onclick="closepopup()">Ok</button>
+        </div>
+      </div>
+
+     </section>
+
+     <section class="commentArea">
+      <div class="recommendation-area">
+        <p>Jane is a very quick learner and quickly grasps key concepts of Web development. She got a great attitude & she is an excellent team player. She has a curious mind and asks the right question. She takes initiative within a team and has potentials to lead the team.</p>
+      </div>
+        <div class="recommendation-area">
+          <p>Working with Jane has been an awesome experience. She is highly knowledgeable and always goes the extra step to make sure everything is right. For any future projects that need her expertise, I would definitely want to work with her again.</p>
+        </div>
+        <div class="recommendation-area">
+          <p>I had worked along with Jane during the initial phase of our venture which needed Web development. She is a committed resource who has in-depth knowledge about the domain. She will be an asset for any organization!</p>
+        </div>
+        <div class="recommendation-area">
+          <p>Jane is a great person to work with. She is very knowledgeable in front-end development.</p>
+        </div>
+     </section>
+  </main>
+
+  <div class="home-btn-area">
+    <button class="home-btn" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
